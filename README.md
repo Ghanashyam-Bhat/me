@@ -9,6 +9,7 @@ wget --recursive --page-requisites --html-extension --convert-links --restrict-f
 ```
 
 Fix the absolute image paths inside the downloaded JavaScript files
+
 linux
 ```
 find portfolio.pinakatech.in -type f -name "*.js" -exec sed -i 's|"/images/|"./images/|g' {} +
